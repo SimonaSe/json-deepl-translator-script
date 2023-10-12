@@ -9,7 +9,7 @@ export interface Translation {
   ) => Promise<string>;
 }
 export class TranslateService implements Translation {
-  authKey = process.env.DEEPL_API_KEY ?? "YOUR_DEEPL_API_KEY"; // Replace with your key
+  authKey = process.env.DEEPL_API_KEY ?? ""; // Replace with your key
   translator: deepl.Translator;
 
   constructor() {
